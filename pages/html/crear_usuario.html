@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta | Let's Talk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/crear_usuario.css">
+</head>
+<body>
+
+  <main class="auth">
+    <form class="formulario" action="login.html">
+      <h1 class="titulo">Crear cuenta</h1>
+
+      <label class="sr-only" for="nombre">Nombre completo</label>
+      <input class="campo" id="nombre" type="text" placeholder="Nombre completo" required>
+
+      <label class="sr-only" for="correo">Correo institucional</label>
+      <input class="campo" id="correo" type="email" placeholder="Correo institucional"
+             required pattern="[^@\s]+@correo\.tdea\.edu\.co"
+             title="Usa tu correo institucional, que termina en @correo.tdea.edu.co">
+
+      <label class="sr-only" for="clave">Contraseña</label>
+      <input class="campo" id="clave" type="password" placeholder="Contraseña"
+             required minlength="8"
+             title="La contraseña debe tener al menos 8 caracteres">
+
+      <button class="boton" type="submit">Registrarse</button>
+
+      <p class="alterno">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+    </form>
+  </main>
+
+</body>
+</html>
